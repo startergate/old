@@ -11,7 +11,10 @@ a {
     font-family: 'Nanum Gothic Coding', monospace;
 }
 
-
+article {
+    margin: 0 64px;
+    padding: 32px;
+}
 
 @media (prefers-color-scheme: dark) {
     body {
@@ -25,6 +28,11 @@ a {
 
     a:hover {
         background: white;
+        color: #3D414D;
+    }
+
+    article {
+        background-color: white;
         color: #3D414D;
     }
 }
@@ -60,15 +68,18 @@ td {
     border-radius: 50%;
     height: 128px;
     box-shadow: 3px 3px 3px dimgray;
+    font-size: 64px;
 }
 
 .header.text {
     text-align: left;
 }
 
-.stg {
-    font-size: 64px;
-    vertical-align: bottom;
+.subtitle {
+    font-size: 32px;
+}
+
+.bold {
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 900;
 }
