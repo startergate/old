@@ -35,6 +35,10 @@ article {
         color: var(--main-color);
     }
 
+    .private:hover {
+        color: darkred;
+    }
+
     .project {
         background: var(--main-color);
         color: white;
@@ -53,6 +57,10 @@ article {
     article, a:hover {
         background: var(--main-color);
         color: white;
+    }
+
+    .private:hover {
+        background-color: darkred;
     }
 
     .project {
@@ -106,11 +114,12 @@ td {
 
 .projects {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .project {
     box-sizing: border-box;
-    width: 450px;
+    width: 400px;
     margin: 32px;
     padding: 32px;
 }
@@ -121,7 +130,8 @@ td {
 }
 
 .plogo {
-    width: 130px;
+    width: 105px;
+    color: white;
     background: var(--main-color)
 }
 
@@ -134,7 +144,7 @@ td {
 }
 
 .text-description {
-    width: 256px;
+    width: 231px;
     padding: 8px;
 }
 
