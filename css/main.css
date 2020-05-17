@@ -1,8 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Nanum+Gothic+Coding:wght@400;700&family=Noto+Sans+KR:wght@100;300;400;500;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700&family=Song+Myung&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&family=Noto+Sans+KR:wght@100;300;400;500;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700&family=Song+Myung&display=swap');
+
+:root {
+    --main-color: #3D414D
+}
 
 body {
     margin: 0;
-    color: #3D414D;
+    color: var(--main-color);
 }
 
 a {
@@ -18,7 +22,7 @@ article {
 
 @media (prefers-color-scheme: dark) {
     body {
-        background-color: #3D414D;
+        background-color: var(--main-color);
         color: white;
     }
 
@@ -26,25 +30,38 @@ article {
         color: white;
     }
 
-    a:hover {
+    article, a:hover {
         background: white;
-        color: #3D414D;
+        color: var(--main-color);
     }
 
-    article {
-        background-color: white;
-        color: #3D414D;
+    .project {
+        background: var(--main-color);
+        color: white;
+    }
+
+    .description {
+        border-bottom: 2px solid white;
     }
 }
 
 @media (prefers-color-scheme: light) {
     a {
-        color: #3D414D;
+        color: var(--main-color);
     }
 
-    a:hover {
-        background: #3D414D;
+    article, a:hover {
+        background: var(--main-color);
         color: white;
+    }
+
+    .project {
+        background: white;
+        color: var(--main-color);
+    }
+
+    .description {
+        border-bottom: 2px solid var(--main-color);
     }
 }
 
@@ -67,7 +84,6 @@ td {
 .logo {
     border-radius: 50%;
     height: 128px;
-    box-shadow: 3px 3px 3px dimgray;
     font-size: 64px;
 }
 
@@ -86,4 +102,68 @@ td {
 
 .bottom {
     vertical-align: top;
+}
+
+.projects {
+    display: flex;
+}
+
+.project {
+    box-sizing: border-box;
+    width: 450px;
+    margin: 32px;
+    padding: 32px;
+}
+
+.content {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.plogo {
+    width: 130px;
+    background: var(--main-color)
+}
+
+.description {
+    box-sizing: border-box;
+    vertical-align: top;
+    display: flex;
+    text-align: right;
+    font-family: 'Noto Serif KR', serif;
+}
+
+.text-description {
+    width: 256px;
+    padding: 8px;
+}
+
+.project-title {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 900;
+    font-size: 24px;
+    margin: 0;
+}
+
+.content.description {
+    padding-bottom: 8px;
+}
+
+.content.repos {
+    padding-top: 8px;
+}
+
+.little-title {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 900;
+}
+
+.repo-list {
+    margin: 4px 0 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.repo-item {
+    float: left;
 }
