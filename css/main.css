@@ -131,9 +131,12 @@ td {
 }
 
 .plogo {
+    height: 105px;
     width: 105px;
     color: white;
-    background: var(--main-color)
+    background: var(--main-color);
+    align-items: center;
+    vertical-align: center;
 }
 
 .description {
