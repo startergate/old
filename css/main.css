@@ -131,12 +131,25 @@ td {
 }
 
 .plogo {
+    display: flex;
     height: 105px;
     width: 105px;
     color: white;
     background: var(--main-color);
     align-items: center;
     vertical-align: center;
+}
+
+.plogo.round {
+    border-radius: 50%;
+}
+
+.plogo.dark {
+    background: white;
+}
+
+.plogo-image {
+    width: 105px;
 }
 
 .description {
