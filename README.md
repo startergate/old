@@ -1,3 +1,3 @@
 # [startergate.dev](https://startergate.dev)
-지금은 html css 지만\
-나중에는 gatsby.js 로 바꿀 예정 [이걸로](https://github.com/startergate/about-me)
+예전엔 html css 였지만\
+지금은 gatsby.js 로 바뀜 [이걸로](https://github.com/startergate/about-me)
